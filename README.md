@@ -1,0 +1,1 @@
+This will be a basic rock paper scissors project where you play rock paper scissors against a computer in your browsers JavaScript console. This project will represent the basics of JavaScript that I have learnt from The Odin Projects JavaScript lessons so far.
