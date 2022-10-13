@@ -1,16 +1,16 @@
-//Start variables for score 
+// Start variables for score 
 let playerScore = 0;
 let computerScore = 0;
-//End variables for score
-//Start function to determine computers play
+// End variables for score
+// Start function to determine computers play
 const getComputerChoice = () => {
     const options = ["rock", "paper", "scissors"];
     const randNum = Math.floor(Math.random() * 3);
     const computerChoice = options[randNum];
     return computerChoice;
 }
-//End function to determine computers play
-//Start function to play a single round 
+// End function to determine computers play
+// Start function to play a single round 
 const playRound = (playerSelection, computerSelection) => {
     if (playerSelection === "rock" && computerSelection === "rock") {
         return "You tied! you both threw rock!"
@@ -38,14 +38,13 @@ const playRound = (playerSelection, computerSelection) => {
         return "You lost! rock crushes scissors!"
     }
 }
-
-const playerSelection = "rock";
-//End function to play a single round
-//Start function to loop a five round game 
+// End function to play a single round
+// Start function to loop a five round game 
 const game = () => {
     for (let i = 0; i < 5; i++) {
+        const playerSelection = prompt("What will you throw?", "Rock, Paper, or Scissors").toLowerCase();
         const computerSelection = getComputerChoice();
-        playRound(playerSelection, computerSelection);
+        console.log(playRound(playerSelection, computerSelection));
     }
     if (playerScore > computerScore) {
         return "You won! Absolutely remarkable";
@@ -55,5 +54,6 @@ const game = () => {
         return "You tied! What a fateful ending"
     }
 }
+
 console.log(game());
-//End function to loop a five round game 
+// End function to loop a five round game 
