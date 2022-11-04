@@ -1,0 +1,58 @@
+html {
+    background: url("images/earth-5454439_1920.jpg");
+    background-repeat: no-repeat;
+    height: 100%;
+    overflow: hidden;
+    background-size: cover;
+  
+}
+
+.icon-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 30px;
+} 
+div > h3 {
+    color: white;
+}
+
+.btn-container {
+    min-height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: 225px;
+    gap: 20px;
+}
+
+.rockButton {
+    padding: 35px;
+    border-radius: 10%;
+    font-size: 30px;
+}
+
+.paperButton {
+    padding: 35px;
+    border-radius: 10%;
+    font-size: 30px;
+}
+
+.scissorsButton {
+    padding: 35px;
+    border-radius: 10%;
+    font-size: 30px;
+}
+
+.outputDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.restart-button-div {
+    min-height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: 225px;
+}
